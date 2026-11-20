@@ -1,0 +1,19 @@
+@view-transition { navigation: auto; }
+
+html, body {
+    font-family: 'Times New Roman', 'Noto Serif', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 90ch;
+    margin: auto;
+    padding: 1ch;
+}
+
+a:hover {
+    opacity: 0.7;
+}
