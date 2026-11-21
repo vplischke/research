@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Control-History Cost of Exact DAG-Rider Delivery</title>
+
+  <!-- Google Scholar metadata -->
+  <meta name="citation_title" content="The Control-History Cost of Exact DAG-Rider Delivery">
+  <meta name="citation_author" content="Plischke, Vera">
+  <meta name="citation_publication_date" content="2026/11/20">
+  <meta name="citation_pdf_url" content="https://vplischke.github.io/research/TETRIS/paper.pdf">
+  <meta name="citation_doi" content="10.5281/zenodo.12345678">
+
+  <!-- KaTeX  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+</head>
+
+<body>
+  <article>
+    <h1>The Control-History Cost of Exact DAG-Rider Delivery</h1>
+
+    <h2>Vera Plischke</h2>
+    <p>November 21, 2026</p>
+
+    <h2>Abstract</h2>
+    <p>
+      	Exact DAG-Rider delivery can require unbounded control history, even when only
+        two batches carry transactions and the protocol keeps committing. At the cut,
+        all correct replicas have both batches and the vertices that contain the
+        recorded choices. A later reference to a stable slot selects one of $m$ bits
+        from that history. A correct leader's commit then reveals the bit in the
+        relative order of the two batches, and both come from a correct author. For
+        each index, the ordinary continuation supplies identical inputs across
+        prefixes, so exact delivery forces the correct replicas to retain $m$ bits
+        between them. The probability of the required coin event is independent of
+        $m$, and the argument holds for every sequence of earlier coin outcomes. We
+        then require each author to link to its previous vertex. A table of first
+        occurrences answers weak references of any age, and after a direct commit the
+        collector retires all rounds through that wave without another agreement step.
+        With a fixed committee and a bounded number of pending payloads, the state of
+        the collector grows linearly with the uncommitted suffix, apart from
+        identifier widths. We prove a matching lower bound for two payloads. Even a
+        strong edge to the previous round can leak old order information when the
+        child shows up late.
+    </p>
+
+    <p>
+      <a href="paper.pdf">Full paper (PDF)</a>
+    </p>
+  </article>
+</body>
+</html>
