@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Certifying Performance Budgets for Adaptive Byzantine Consensus</title>
+
+  <!-- Google Scholar metadata -->
+  <meta name="citation_title" content="Certifying Performance Budgets for Adaptive Byzantine Consensus">
+  <meta name="citation_author" content="Vera Plischke">
+  <meta name="citation_publication_date" content="2026/11/23">
+  <meta name="citation_doi" content="10.5281/zenodo.24407116">
+  <meta name="citation_pdf_url" content="https://vplischke.github.io/research/SHAPESHIFT/paper.pdf">
+
+  <link rel="stylesheet" href="../style.css">
+  
+  <!-- KaTeX  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+  <style>
+    .katex { font-size: 1em; line-height: inherit; }
+    .katex-display > .katex { font-size: 1.21em; }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1>Certifying Performance Budgets for Adaptive Byzantine Consensus</h1>
+    <p>Nov 23, 2026; Vera Plischke</p>
+
+    <p>
+      <a href="paper.pdf">Full paper (PDF)</a>; <a href="paper.pdf.ots">OTS Stamp</a>
+    </p>
+
+    <h2>Abstract</h2>
+    <p class="justify">
+    	Byzantine consensus protocols may modify their leader and communication
+      channels, but inaccuracies in their measurements can make such modifications
+      expensive, even when agreement holds. We separate the choice of a new
+      configuration from the decision to enact it. The controller aggregates signed
+      evidence under a fixed unknown fault set and reserves the cost of the switch.
+      If the switch preserves the execution prefix, the reserve covers the remaining
+      clipped delay and wire service. This yields a cumulative bound against
+      ordinary fallback recovery that does not require accurate predictions. For a
+      single precharged schedule with protected prefixes, we also bound the cost of
+      providing manipulated (vs. truthful) reports to the same selector, including
+      lost improvements. Signed simulations showed that delayed (vs. eager) copies
+      of votes saved 42.13 ms in selected loss scenarios under the same allowance. A
+      prepare certificate provides a different form of evidence. When it has not
+      reached enough replicas, a replica can still cast its old precommit before
+      voting in the next round. We prove agreement in the presence of ordinary and
+      late signing. With simulated prepare omissions, repair saved 199.70 ms under
+      the same allowance relative to merely relaying a prepare. Silent faults or
+      persistent suppression could slow initial adaptation in the first round.
+    </p>
+
+    <h2>Citation</h2>
+    <p>
+      Plischke, V. (2026).
+      <em>Certifying Performance Budgets for Adaptive Byzantine Consensus.</em>
+      <a href="https://doi.org/10.5281/zenodo.24407116">https://doi.org/10.5281/zenodo.24407116</a>
+    </p>
+    
+    <pre><code>@misc{plischke2026performancebudgets,
+    author = {Vera Plischke},
+    title = {Certifying Performance Budgets for Adaptive Byzantine Consensus},
+    year = {2026},
+    doi = {10.5281/zenodo.24407116},
+    url = {https://doi.org/10.5281/zenodo.24407116}
+}</code></pre>
+  </article>
+</body>
+</html>
